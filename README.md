@@ -63,6 +63,19 @@ github.com/gin-contrib/sse v0.0.0-20170109093832-22d885f9ecc7
 github.com/gin-gonic/gin v1.1.4
 ```
 
+- require module with local
+
+```
+module github.com/songjiayang/gin-mod/web
+
+require (
+	github.com/songjiayang/go-mod/lib v0.0.0
+)
+
+replace github.com/songjiayang/go-mod/lib => ../lib
+```
+
 ## reference:
 
-- [初窥Go module](https://tonybai.com/2018/07/15/hello-go-module)
+- [初窥 Go module](https://tonybai.com/2018/07/15/hello-go-module)
+- [wiki/Modules](https://github.com/golang/go/wiki/Modules)
